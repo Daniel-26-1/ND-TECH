@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NDTECH - Finalizar compra</title>
+<link rel="stylesheet" href="css/style3.css">
+<link rel="stylesheet" href="css/comparador.css">
+<link rel="stylesheet" href="css/pagar.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <aside class="sidebar">
+
+    <div class="logo">
+      <div class="logo-icono">
+        <img src="imagenes/logo.png" alt="Logo NDTECH">
+      </div>
+      <div class="logo-texto">
+        <h1>ND<span>TECH</span></h1>
+        <p>TECNOLOGÍA SIN LÍMITES</p>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <a href="inicio.html" class="menu-item">
+        <span class="menu-icono">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 11L12 4L21 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10V19C5 19.5523 5.44772 20 6 20H9V15C9 14.4477 9.44772 14 10 14H14C14.5523 14 15 14.4477 15 15V20H18C18.5523 20 19 19.5523 19 19V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        INICIO
+      </a>
+
+      <a href="inicio2.html" class="menu-item">
+        <span class="menu-icono">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/></svg>
+        </span>
+        VER PRODUCTOS
+      </a>
+
+      <a href="comparar.html" class="menu-item">
+        <span class="menu-icono">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7H19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7L2 13C2 14.6569 3.34315 16 5 16C6.65685 16 8 14.6569 8 13L5 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M19 7L16 13C16 14.6569 17.3431 16 19 16C20.6569 16 22 14.6569 22 13L19 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </span>
+        COMPARADOR
+        <span class="menu-flecha">&#8250;</span>
+      </a>
+
+      <a href="index.html" class="menu-item">
+        <span class="menu-icono">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17L21 12L16 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12H9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </span>
+        CERRAR SESIÓN
+      </a>
+    </nav>
+
+    <div class="promo">
+      <div class="promo-icono">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.59 13.41L11 3.83C10.63 3.46 10.13 3.25 9.6 3.25H4C3.44772 3.25 3 3.69772 3 4.25V9.85C3 10.38 3.21 10.88 3.58 11.25L13.16 20.83C13.94 21.61 15.2 21.61 15.98 20.83L20.59 16.22C21.37 15.44 21.37 14.19 20.59 13.41Z" stroke="#3aa0ff" stroke-width="1.6" fill="rgba(58,160,255,0.15)"/><circle cx="7.5" cy="7.5" r="1.25" fill="#3aa0ff"/></svg>
+      </div>
+      <h3>OFERTAS<br>EXCLUSIVAS</h3>
+      <p>Descuentos increíbles<br>todos los días</p>
+    </div>
+
+  </aside>
+
+  <main class="contenido">
+
+    <header class="topbar">
+      <button class="btn-menu" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6H21" stroke="white" stroke-width="1.8" stroke-linecap="round"/><path d="M3 12H21" stroke="white" stroke-width="1.8" stroke-linecap="round"/><path d="M3 18H21" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+
+      <div class="buscador">
+        <input type="text" placeholder="Buscar productos..." disabled>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7" stroke="#8a93ab" stroke-width="1.8"/><path d="M20 20L16.5 16.5" stroke="#8a93ab" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </div>
+
+      <div class="carrito-wrapper">
+        <div class="carrito">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 3H4.5L6.5 15.5C6.6 16.3 7.3 17 8.2 17H18C18.8 17 19.5 16.4 19.6 15.6L21 6H6" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="21" r="1.2" fill="white"/><circle cx="18" cy="21" r="1.2" fill="white"/></svg>
+          <span class="carrito-cantidad" id="carrito-cantidad">0</span>
+          <span class="carrito-texto">CARRITO</span>
+        </div>
+      </div>
+    </header>
+
+    <h1 class="titulo-pagina">FINALIZAR COMPRA</h1>
+
+    <div class="pasos">
+      <div class="paso completado"><span class="paso-circulo">&#10003;</span>Carrito</div>
+      <div class="paso-linea completado"></div>
+      <div class="paso activo"><span class="paso-circulo">2</span>Información</div>
+      <div class="paso-linea"></div>
+      <div class="paso"><span class="paso-circulo">3</span>Pago</div>
+      <div class="paso-linea"></div>
+      <div class="paso"><span class="paso-circulo">4</span>Confirmación</div>
+    </div>
+
+    <div class="checkout-grid">
+
+      <div class="columna-izquierda">
+
+        <div class="panel-pago">
+          <h3>RESUMEN DE TU COMPRA</h3>
+
+          <div class="tabla-cabecera">
+            <span>Producto</span>
+            <span>Precio</span>
+            <span>Cantidad</span>
+            <span>Subtotal</span>
+            <span></span>
+          </div>
+
+          <div id="lista-productos"></div>
+
+          <a href="inicio2.html" class="volver-carrito">&#8592; Volver al carrito</a>
+        </div>
+
+        <div class="panel-pago fila-inferior">
+          <div class="caja-descuento">
+            <h4>¿Tienes un código de descuento?</h4>
+            <div class="codigo">
+              <input type="text" id="input-codigo" placeholder="Ingresa tu código">
+              <button onclick="aplicarDescuento()">Aplicar</button>
+            </div>
+            <p id="mensaje-codigo"></p>
+          </div>
+
+          <div class="caja-totales">
+            <div><span>Subtotal</span><span id="subtotal"></span></div>
+            <div><span>Descuento</span><span id="descuento"></span></div>
+            <div><span>Envío</span><span id="envio"></span></div>
+            <div><span>ITBMS (7%)</span><span id="itbms"></span></div>
+            <div class="total"><span>TOTAL</span><span id="total"></span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="columna-derecha">
+        <div class="panel-pago">
+          <h3>INFORMACIÓN DE PAGO</h3>
+
+          <label class="etiqueta">Nombre completo</label>
+          <input type="text" id="nombre-cliente" placeholder="Ej. Juan Pérez">
+
+          <label class="etiqueta">Correo electrónico</label>
+          <input type="email" id="correo-cliente" placeholder="ejemplo@correo.com">
+
+          <label class="etiqueta">Dirección de envío</label>
+          <input type="text" id="direccion-cliente" placeholder="Calle, número, referencia...">
+
+          <div class="fila-dos">
+            <div>
+              <label class="etiqueta">Ciudad</label>
+              <input type="text" id="ciudad-cliente" placeholder="Ej. Panamá">
+            </div>
+            <div>
+              <label class="etiqueta">Código postal</label>
+              <input type="text" id="postal-cliente" placeholder="Ej. 0801">
+            </div>
+          </div>
+
+          <h4 class="subtitulo-pago">Método de pago</h4>
+
+          <label class="metodo-pago" data-metodo-caja="tarjeta">
+            <input type="radio" name="pago" value="tarjeta" checked>
+            <span>Tarjeta de crédito / débito</span>
+          </label>
+          <div id="campos-tarjeta" class="campos-pago">
+            <input type="text" placeholder="Número de tarjeta" data-metodo="tarjeta">
+            <input type="text" placeholder="Fecha de vencimiento (MM/AA)" data-metodo="tarjeta">
+            <input type="text" placeholder="CVV" data-metodo="tarjeta">
+          </div>
+
+          <label class="metodo-pago" data-metodo-caja="paypal">
+            <input type="radio" name="pago" value="paypal">
+            <span>PayPal</span>
+          </label>
+          <div id="campos-paypal" class="campos-pago" hidden>
+            <input type="email" placeholder="Correo de PayPal" data-metodo="paypal">
+          </div>
+
+          <label class="metodo-pago" data-metodo-caja="yappy">
+            <input type="radio" name="pago" value="yappy">
+            <span>Yappy</span>
+          </label>
+          <div id="campos-yappy" class="campos-pago" hidden>
+            <input type="text" placeholder="Número de teléfono Yappy" data-metodo="yappy">
+          </div>
+
+          <p id="mensaje-error"></p>
+
+          <button class="btn-pagar-final" onclick="pagar()">
+            &#128274; <span id="texto-boton-pagar">Pagar</span>
+          </button>
+          <p class="terminos">Al continuar, aceptas nuestros <a href="#">Términos y Condiciones</a></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="beneficios">
+      <div><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 16V6C3 5.44772 3.44772 5 4 5H14V16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 9H18L21 12.5V16H14" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="7.5" cy="18" r="2" stroke="currentColor" stroke-width="1.7"/><circle cx="17.5" cy="18" r="2" stroke="currentColor" stroke-width="1.7"/></svg><div><b>Envío rápido</b><span>A todo el país</span></div></div>
+      <div><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="10" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 10V7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7V10" stroke="currentColor" stroke-width="1.7"/></svg><div><b>Pago seguro</b><span>Tus pagos están protegidos</span></div></div>
+      <div><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L19 6V11C19 15.5 16 19 12 21C8 19 5 15.5 5 11V6L12 3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 12L11 14L15.5 9.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Garantía oficial</b><span>Productos 100% originales</span></div></div>
+      <div><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 13C4 8 7.5 4 12 4C16.5 4 20 8 20 13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><rect x="3" y="13" width="4" height="6" rx="1.5" stroke="currentColor" stroke-width="1.7"/><rect x="17" y="13" width="4" height="6" rx="1.5" stroke="currentColor" stroke-width="1.7"/></svg><div><b>Soporte 24/7</b><span>Estamos para ayudarte</span></div></div>
+    </div>
+
+  </main>
+</div>
+
+<div class="modal" id="modal-exito">
+  <div class="modal-contenido">
+    <p>Tu compra se ha realizado correctamente</p>
+    <button onclick="cerrarModal()">Aceptar</button>
+  </div>
+</div>
+
+<script>
+const CLAVE_CARRITO = 'ndtech_carrito';
+const CODIGO_VALIDO = 'NDTECH10';
+const ENVIO_POR_PRODUCTO = 3.50;
+const ITBMS_PORCENTAJE = 0.07;
+let descuento = 0;
+
+function obtenerCarrito() {
+  try {
+    return JSON.parse(localStorage.getItem(CLAVE_CARRITO)) || [];
+  } catch {
+    return [];
+  }
+}
+
+function guardarCarritoActualizado(carrito) {
+  localStorage.setItem(CLAVE_CARRITO, JSON.stringify(carrito));
+}
+
+function formatoDinero(valor) {
+  return 'US$ ' + Number(valor).toFixed(2);
+}
+
+function calcularSubtotal() {
+  return obtenerCarrito().reduce((total, p) => total + p.precio * p.cantidad, 0);
+}
+
+// US$ 3.50 por cada producto distinto en el carrito (no se multiplica por cantidad)
+function calcularEnvio() {
+  const carrito = obtenerCarrito();
+  if (carrito.length === 0) return 0;
+  return carrito.length * ENVIO_POR_PRODUCTO;
+}
+
+function renderizarProductos() {
+  const lista = document.getElementById('lista-productos');
+  const carrito = obtenerCarrito();
+  document.getElementById('carrito-cantidad').textContent = carrito.reduce((s, p) => s + p.cantidad, 0);
+
+  lista.innerHTML = '';
+  if (carrito.length === 0) {
+    lista.innerHTML = '<p class="carrito-vacio-msg">Tu carrito está vacío.</p>';
+    return;
+  }
+
+  carrito.forEach((item, indice) => {
+    const fila = document.createElement('div');
+    fila.className = 'fila-producto';
+    fila.innerHTML =
+      '<div class="fila-producto-nombre"><img src="' + (item.imagen || '') + '" alt="' + item.nombre + '"><span>' + item.nombre + '</span></div>' +
+      '<span>' + formatoDinero(item.precio) + '</span>' +
+      '<div class="cantidad-control"><button data-accion="restar" data-indice="' + indice + '">-</button><span>' + item.cantidad + '</span><button data-accion="sumar" data-indice="' + indice + '">+</button></div>' +
+      '<span>' + formatoDinero(item.precio * item.cantidad) + '</span>' +
+      '<button class="btn-quitar" data-indice="' + indice + '">&times;</button>';
+    lista.appendChild(fila);
+  });
+
+  lista.querySelectorAll('[data-accion="sumar"]').forEach(boton => {
+    boton.addEventListener('click', () => cambiarCantidad(Number(boton.dataset.indice), 1));
+  });
+  lista.querySelectorAll('[data-accion="restar"]').forEach(boton => {
+    boton.addEventListener('click', () => cambiarCantidad(Number(boton.dataset.indice), -1));
+  });
+  lista.querySelectorAll('.btn-quitar').forEach(boton => {
+    boton.addEventListener('click', () => {
+      const carritoActual = obtenerCarrito();
+      carritoActual.splice(Number(boton.dataset.indice), 1);
+      guardarCarritoActualizado(carritoActual);
+      renderizarProductos();
+      actualizarTotales();
+    });
+  });
+}
+
+function cambiarCantidad(indice, cambio) {
+  const carrito = obtenerCarrito();
+  carrito[indice].cantidad += cambio;
+  if (carrito[indice].cantidad < 1) carrito[indice].cantidad = 1;
+  guardarCarritoActualizado(carrito);
+  renderizarProductos();
+  actualizarTotales();
+}
+
+function actualizarTotales() {
+  const subtotal = calcularSubtotal();
+  const baseConDescuento = subtotal - descuento;
+  const envio = calcularEnvio();
+  const itbms = baseConDescuento * ITBMS_PORCENTAJE;
+  const total = baseConDescuento + envio + itbms;
+
+  document.getElementById('subtotal').textContent = formatoDinero(subtotal);
+  document.getElementById('descuento').textContent = formatoDinero(descuento);
+  document.getElementById('envio').textContent = formatoDinero(envio);
+  document.getElementById('itbms').textContent = formatoDinero(itbms);
+  document.getElementById('total').textContent = formatoDinero(total);
+  document.getElementById('texto-boton-pagar').textContent = 'Pagar ' + formatoDinero(total);
+}
+
+function aplicarDescuento() {
+  const codigo = document.getElementById('input-codigo').value.trim().toUpperCase();
+  const mensaje = document.getElementById('mensaje-codigo');
+  if (codigo === CODIGO_VALIDO) {
+    descuento = calcularSubtotal() * 0.1;
+    mensaje.textContent = 'Código aplicado: 10% de descuento';
+  } else {
+    descuento = 0;
+    mensaje.textContent = 'Código inválido';
+  }
+  actualizarTotales();
+}
+
+function mostrarCamposPago() {
+  const metodo = document.querySelector('input[name="pago"]:checked').value;
+  document.querySelectorAll('.campos-pago').forEach(div => {
+    div.hidden = div.id !== 'campos-' + metodo;
+  });
+  document.querySelectorAll('.metodo-pago').forEach(label => {
+    label.classList.toggle('seleccionado', label.dataset.metodoCaja === metodo);
+  });
+}
+
+document.querySelectorAll('input[name="pago"]').forEach(radio => {
+  radio.addEventListener('change', mostrarCamposPago);
+});
+
+function formularioValido() {
+  const campos = [
+    document.getElementById('nombre-cliente'),
+    document.getElementById('correo-cliente'),
+    document.getElementById('direccion-cliente'),
+    document.getElementById('ciudad-cliente'),
+    document.getElementById('postal-cliente')
+  ];
+  for (const campo of campos) {
+    if (!campo.value.trim()) return false;
+  }
+
+  const metodo = document.querySelector('input[name="pago"]:checked').value;
+  const camposMetodo = document.querySelectorAll('[data-metodo="' + metodo + '"]');
+  for (const campo of camposMetodo) {
+    if (!campo.value.trim()) return false;
+  }
+  return true;
+}
+
+function pagar() {
+  const mensaje = document.getElementById('mensaje-error');
+  if (!formularioValido()) {
+    mensaje.textContent = 'Completa todos los campos obligatorios antes de pagar.';
+    return;
+  }
+  mensaje.textContent = '';
+  document.getElementById('modal-exito').style.display = 'flex';
+}
+
+function cerrarModal() {
+  document.getElementById('modal-exito').style.display = 'none';
+}
+
+mostrarCamposPago();
+renderizarProductos();
+actualizarTotales();
+</script>
+
+</body>
+</html>

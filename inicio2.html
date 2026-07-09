@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NDTECH - Todos los productos</title>
+<link rel="stylesheet" href="css/style3.css">
+<link rel="stylesheet" href="css/comparador.css">
+<link rel="stylesheet" href="css/pagar.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <aside class="sidebar">
+
+    <div class="logo">
+      <div class="logo-icono">
+        <img src="imagenes/logo.png" alt="Logo NDTECH">
+      </div>
+      <div class="logo-texto">
+        <h1>ND<span>TECH</span></h1>
+        <p>TECNOLOGÍA SIN LÍMITES</p>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <a href="inicio.html" class="menu-item">
+        <span class="menu-icono">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 11L12 4L21 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10V19C5 19.5523 5.44772 20 6 20H9V15C9 14.4477 9.44772 14 10 14H14C14.5523 14 15 14.4477 15 15V20H18C18.5523 20 19 19.5523 19 19V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        INICIO
+      </a>
+
+      <a href="inicio2.html" class="menu-item activo">
+        <span class="menu-icono">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/></svg>
+        </span>
+        VER PRODUCTOS
+      </a>
+
+      <a href="comparar.html" class="menu-item">
+        <span class="menu-icono">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7H19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7L2 13C2 14.6569 3.34315 16 5 16C6.65685 16 8 14.6569 8 13L5 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M19 7L16 13C16 14.6569 17.3431 16 19 16C20.6569 16 22 14.6569 22 13L19 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </span>
+        COMPARADOR
+        <span class="menu-flecha">&#8250;</span>
+      </a>
+
+
+      <a href="index.html" class="menu-item">
+        <span class="menu-icono">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17L21 12L16 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12H9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </span>
+        CERRAR SESIÓN
+      </a>
+    </nav>
+
+    <div class="promo">
+      <div class="promo-icono">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.59 13.41L11 3.83C10.63 3.46 10.13 3.25 9.6 3.25H4C3.44772 3.25 3 3.69772 3 4.25V9.85C3 10.38 3.21 10.88 3.58 11.25L13.16 20.83C13.94 21.61 15.2 21.61 15.98 20.83L20.59 16.22C21.37 15.44 21.37 14.19 20.59 13.41Z" stroke="#3aa0ff" stroke-width="1.6" fill="rgba(58,160,255,0.15)"/><circle cx="7.5" cy="7.5" r="1.25" fill="#3aa0ff"/></svg>
+      </div>
+      <h3>OFERTAS<br>EXCLUSIVAS</h3>
+      <p>Descuentos increíbles<br>todos los días</p>
+    </div>
+
+  </aside>
+
+  <main class="contenido">
+
+    <header class="topbar">
+      <button class="btn-menu" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6H21" stroke="white" stroke-width="1.8" stroke-linecap="round"/><path d="M3 12H21" stroke="white" stroke-width="1.8" stroke-linecap="round"/><path d="M3 18H21" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+
+      <div class="buscador">
+        <input type="text" id="input-buscar" placeholder="Buscar productos...">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7" stroke="#8a93ab" stroke-width="1.8"/><path d="M20 20L16.5 16.5" stroke="#8a93ab" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </div>
+
+     <div class="carrito-wrapper">
+        <button class="carrito" id="btn-carrito-icono">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 3H4.5L6.5 15.5C6.6 16.3 7.3 17 8.2 17H18C18.8 17 19.5 16.4 19.6 15.6L21 6H6" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="21" r="1.2" fill="white"/><circle cx="18" cy="21" r="1.2" fill="white"/></svg>
+          <span class="carrito-cantidad" id="carrito-cantidad">0</span>
+          <span class="carrito-texto">CARRITO</span>
+        </button>
+
+        <div class="carrito-panel" id="carrito-panel">
+          <h3>Tu carrito</h3>
+          <div class="carrito-lista" id="carrito-lista">
+            <p class="carrito-vacio" id="carrito-vacio">Tu carrito está vacío</p>
+          </div>
+          <div class="carrito-total">
+            <span>Total</span>
+            <span id="carrito-total-monto">US$ 0.00</span>
+          </div>
+          <a class="btn-pagar" id="btn-ir-pagar" href="pagar.html">Ir a pagar</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="destacados">
+      <div class="destacados-titulo">
+        <span class="estrella">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="#3aa0ff" stroke-width="1.5"/><path d="M12 7L13.5 10.5L17 11L14.5 13.5L15 17L12 15.2L9 17L9.5 13.5L7 11L10.5 10.5L12 7Z" fill="#3aa0ff"/></svg>
+        </span>
+        <h2>TODOS LOS PRODUCTOS</h2>
+      </div>
+
+      <div class="grid-productos" id="grid-productos">
+
+        <p class="sin-resultados" id="sin-resultados">No se encontraron productos que coincidan con tu búsqueda.</p>
+
+        <div class="tarjeta" data-nombre="iPhone 15 Pro 256GB" data-precio="1572.85" data-categoria="celular" data-imagen="imagenes/Iphone15.png">
+          <ul class="specs-producto" hidden>
+            <li>Pantalla: 6.1" Super Retina XDR</li>
+            <li>Procesador: A17 Pro</li>
+            <li>RAM: 8 GB</li>
+            <li>Almacenamiento: 256 GB</li>
+            <li>Cámara trasera: 48 MP + 12 MP + 12 MP</li>
+            <li>Cámara frontal: 12 MP</li>
+            <li>Batería: 3274 mAh</li>
+            <li>Carga rápida: 27W</li>
+            <li>Sistema operativo: iOS 17</li>
+          </ul>
+          <a href="detalle-iphone15.html"><img src="imagenes/Iphone15.png" alt="iPhone 15 Pro Max"></a>
+          <h3>iPhone 15 Pro<br>256GB</h3>
+          <p class="precio">US$ 1,572.85</p>
+          <button class="btn-carrito" data-accion="agregar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2H3.3L5.1 11.5C5.2 12.1 5.7 12.6 6.4 12.6H13.5C14.1 12.6 14.7 12.2 14.8 11.6L15.8 5H4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="15.5" r="0.9" fill="white"/><circle cx="13" cy="15.5" r="0.9" fill="white"/></svg>
+            Añadir al carrito
+          </button>
+          <button class="btn-comparar" data-accion="comparar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7H19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7L2 13C2 14.6569 3.34315 16 5 16C6.65685 16 8 14.6569 8 13L5 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M19 7L16 13C16 14.6569 17.3431 16 19 16C20.6569 16 22 14.6569 22 13L19 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <span class="texto-btn-comparar">Comparar</span>
+          </button>
+        </div>
+
+        <div class="tarjeta" data-nombre='Samsung Odyssey G7 24"' data-precio="400" data-categoria="monitor" data-imagen="imagenes/Monitor.png">
+          <ul class="specs-producto" hidden>
+            <li>Tamaño: 24"</li>
+            <li>Resolución: 1920 x 1080 (FHD)</li>
+            <li>Tasa de refresco: 240 Hz</li>
+            <li>Tiempo de respuesta: 1 ms</li>
+            <li>Panel: VA Curvo</li>
+            <li>Conectividad: HDMI, DisplayPort</li>
+          </ul>
+          <a href="detalle-samsung-g7.html"><img src="imagenes/Monitor.png" alt="Samsung Odyssey G7"></a>
+          <h3>Samsung Odyssey G7<br> 24"</h3>
+          <p class="precio">US$ 400.00</p>
+          <button class="btn-carrito" data-accion="agregar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2H3.3L5.1 11.5C5.2 12.1 5.7 12.6 6.4 12.6H13.5C14.1 12.6 14.7 12.2 14.8 11.6L15.8 5H4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="15.5" r="0.9" fill="white"/><circle cx="13" cy="15.5" r="0.9" fill="white"/></svg>
+            Añadir al carrito
+          </button>
+          <button class="btn-comparar" data-accion="comparar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7H19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7L2 13C2 14.6569 3.34315 16 5 16C6.65685 16 8 14.6569 8 13L5 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M19 7L16 13C16 14.6569 17.3431 16 19 16C20.6569 16 22 14.6569 22 13L19 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <span class="texto-btn-comparar">Comparar</span>
+          </button>
+        </div>
+
+        <div class="tarjeta" data-nombre="MXZ Gaming PC Desktop" data-precio="820" data-categoria="computadora" data-imagen="imagenes/MXZ.png">
+          <ul class="specs-producto" hidden>
+            <li>Tipo: Escritorio</li>
+            <li>Procesador: Intel Core i5</li>
+            <li>RAM: 16 GB</li>
+            <li>Almacenamiento: 512 GB SSD</li>
+            <li>Tarjeta gráfica: RTX 3060</li>
+            <li>Sistema operativo: Windows 11</li>
+          </ul>
+          <a href="detalle-mxz.html"><img src="imagenes/MXZ.png" alt="MXZ Gaming PC Desktop"></a>
+          <h3>MXZ<br>Gaming PC Desktop</h3>
+          <p class="precio">US$ 820.00</p>
+          <button class="btn-carrito" data-accion="agregar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2H3.3L5.1 11.5C5.2 12.1 5.7 12.6 6.4 12.6H13.5C14.1 12.6 14.7 12.2 14.8 11.6L15.8 5H4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="15.5" r="0.9" fill="white"/><circle cx="13" cy="15.5" r="0.9" fill="white"/></svg>
+            Añadir al carrito
+          </button>
+          <button class="btn-comparar" data-accion="comparar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7H19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7L2 13C2 14.6569 3.34315 16 5 16C6.65685 16 8 14.6569 8 13L5 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M19 7L16 13C16 14.6569 17.3431 16 19 16C20.6569 16 22 14.6569 22 13L19 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <span class="texto-btn-comparar">Comparar</span>
+          </button>
+        </div>
+
+        <div class="tarjeta" data-nombre="AirPods Pro (2da generación)" data-precio="249" data-categoria="audifono" data-imagen="imagenes/AirPods.png">
+          <ul class="specs-producto" hidden>
+            <li>Tipo: In-ear inalámbrico</li>
+            <li>Cancelación de ruido: Sí (activa)</li>
+            <li>Batería: 6h (30h con estuche)</li>
+            <li>Resistencia al agua: IPX4</li>
+            <li>Conectividad: Bluetooth 5.3</li>
+            <li>Compatibilidad: iOS / Android</li>
+          </ul>
+          <a href="detalle-airpods.html"><img src="imagenes/AirPods.png" alt="AirPods Pro"></a>
+          <h3> AirPods Pro<br>(2°generación)</h3>
+          <p class="precio">US$ 249.00</p>
+          <button class="btn-carrito" data-accion="agregar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2H3.3L5.1 11.5C5.2 12.1 5.7 12.6 6.4 12.6H13.5C14.1 12.6 14.7 12.2 14.8 11.6L15.8 5H4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="15.5" r="0.9" fill="white"/><circle cx="13" cy="15.5" r="0.9" fill="white"/></svg>
+            Añadir al carrito
+          </button>
+          <button class="btn-comparar" data-accion="comparar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7H19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7L2 13C2 14.6569 3.34315 16 5 16C6.65685 16 8 14.6569 8 13L5 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M19 7L16 13C16 14.6569 17.3431 16 19 16C20.6569 16 22 14.6569 22 13L19 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <span class="texto-btn-comparar">Comparar</span>
+          </button>
+        </div>
+
+        <div class="tarjeta" data-nombre="HUAWEI MateBook X Pro" data-precio="1600" data-categoria="computadora" data-imagen="imagenes/Matebook.png">
+          <ul class="specs-producto" hidden>
+            <li>Tipo: Laptop</li>
+            <li>Pantalla: 14.2" LTPS 3.1K FullView táctil</li>
+            <li>Procesador: Intel Core Ultra 7</li>
+            <li>RAM: 16 GB</li>
+            <li>Almacenamiento: 1 TB SSD</li>
+            <li>Tarjeta gráfica: Intel Arc Graphics</li>
+            <li>Sistema operativo: Windows 11</li>
+          </ul>
+          <a href="detalle-matebook.html"><img src="imagenes/Matebook.png" alt="HUAWEI MateBook X Pro"></a>
+          <h3>HUAWEI MateBook X Pro</h3>
+          <p class="precio">US$ 1,600.00</p>
+          <button class="btn-carrito" data-accion="agregar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2H3.3L5.1 11.5C5.2 12.1 5.7 12.6 6.4 12.6H13.5C14.1 12.6 14.7 12.2 14.8 11.6L15.8 5H4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="15.5" r="0.9" fill="white"/><circle cx="13" cy="15.5" r="0.9" fill="white"/></svg>
+            Añadir al carrito
+          </button>
+          <button class="btn-comparar" data-accion="comparar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7H19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7L2 13C2 14.6569 3.34315 16 5 16C6.65685 16 8 14.6569 8 13L5 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M19 7L16 13C16 14.6569 17.3431 16 19 16C20.6569 16 22 14.6569 22 13L19 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <span class="texto-btn-comparar">Comparar</span>
+          </button>
+        </div>
+
+        <div class="tarjeta" data-nombre="Play Station 5 1TB" data-precio="480" data-categoria="consola" data-imagen="imagenes/play5.png">
+          <ul class="specs-producto" hidden>
+            <li>Almacenamiento: 1 TB SSD</li>
+            <li>Resolución máxima: 4K a 120fps</li>
+            <li>Procesador: AMD Zen 2</li>
+            <li>Memoria RAM: 16 GB GDDR6</li>
+            <li>Lector de disco: Sí (Ultra HD Blu-ray)</li>
+            <li>Controles incluidos: 1 (DualSense)</li>
+          </ul>
+          <a href="detalle-ps5.html"><img src="imagenes/play5.png" alt="Play Station 5"></a>
+          <h3>Play Station 5<br>1 TB</h3>
+          <p class="precio">US$ 480.00</p>
+          <button class="btn-carrito" data-accion="agregar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2H3.3L5.1 11.5C5.2 12.1 5.7 12.6 6.4 12.6H13.5C14.1 12.6 14.7 12.2 14.8 11.6L15.8 5H4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="15.5" r="0.9" fill="white"/><circle cx="13" cy="15.5" r="0.9" fill="white"/></svg>
+            Añadir al carrito
+          </button>
+          <button class="btn-comparar" data-accion="comparar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7H19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7L2 13C2 14.6569 3.34315 16 5 16C6.65685 16 8 14.6569 8 13L5 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M19 7L16 13C16 14.6569 17.3431 16 19 16C20.6569 16 22 14.6569 22 13L19 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <span class="texto-btn-comparar">Comparar</span>
+          </button>
+        </div>
+
+          <div class="tarjeta" data-nombre="Iphone14 pro" data-precio="1400" data-categoria="celular" data-imagen="imagenes/iphone14.png">
+          <ul class="specs-producto" hidden>
+            <li>Pantalla: 6.1" Super Retina XDR</li>
+            <li>Procesador: A16 Bionic</li>
+            <li>RAM: 6 GB</li>
+            <li>Almacenamiento: 256 GB</li>
+            <li>Cámara trasera: 48 MP + 12 MP + 12 MP</li>
+            <li>Cámara frontal: 12 MP</li>
+            <li>Batería: 3200 mAh</li>
+            <li>Carga rápida: 27W</li>
+            <li>Sistema operativo: iOS 16</li>
+          </ul>
+          <a href="detalle-iphone14.html"><img src="imagenes/iphone14.png" alt="Iphone14 pro"></a>
+          <h3>Iphone 14 Pro 256GB</h3>
+          <p class="precio">US$ 1,400.00</p>
+          <button class="btn-carrito" data-accion="agregar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2H3.3L5.1 11.5C5.2 12.1 5.7 12.6 6.4 12.6H13.5C14.1 12.6 14.7 12.2 14.8 11.6L15.8 5H4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="15.5" r="0.9" fill="white"/><circle cx="13" cy="15.5" r="0.9" fill="white"/></svg>
+            Añadir al carrito
+          </button>
+          <button class="btn-comparar" data-accion="comparar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7H19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7L2 13C2 14.6569 3.34315 16 5 16C6.65685 16 8 14.6569 8 13L5 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M19 7L16 13C16 14.6569 17.3431 16 19 16C20.6569 16 22 14.6569 22 13L19 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <span class="texto-btn-comparar">Comparar</span>
+          </button>
+        </div>
+
+           <div class="tarjeta" data-nombre="HP Pavilion 15" data-precio="1000" data-categoria="computadora" data-imagen="imagenes/hppavilion15.png">
+          <ul class="specs-producto" hidden>
+            <li>Tipo: Laptop</li>
+            <li>Pantalla: 15.6" Full HD IPS</li>
+            <li>Procesador: Intel Core i7</li>
+            <li>RAM: 16 GB</li>
+            <li>Almacenamiento: 1 TB SSD</li>
+            <li>Tarjeta gráfica: NVIDIA GeForce RTX 3050 4 GB</li>
+            <li>Sistema operativo: Windows 11</li>
+          </ul>
+          <a href="detalle-hppavilion15.html"><img src="imagenes/hppavilion15.png" alt="hp pavilion 15"></a>
+          <h3>HP Pavilion 15 1 TB</h3>
+          <p class="precio">US$ 1,000.00</p>
+          <button class="btn-carrito" data-accion="agregar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2H3.3L5.1 11.5C5.2 12.1 5.7 12.6 6.4 12.6H13.5C14.1 12.6 14.7 12.2 14.8 11.6L15.8 5H4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="15.5" r="0.9" fill="white"/><circle cx="13" cy="15.5" r="0.9" fill="white"/></svg>
+            Añadir al carrito
+          </button>
+          <button class="btn-comparar" data-accion="comparar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7H19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7L2 13C2 14.6569 3.34315 16 5 16C6.65685 16 8 14.6569 8 13L5 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M19 7L16 13C16 14.6569 17.3431 16 19 16C20.6569 16 22 14.6569 22 13L19 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <span class="texto-btn-comparar">Comparar</span>
+          </button>
+        </div>
+
+          <div class="tarjeta" data-nombre="Honor Magic 7 Lite" data-precio="310.99" data-categoria="celular" data-imagen="imagenes/HonorMagic.png">
+          <ul class="specs-producto" hidden>
+            <li>Pantalla: 6.78" AMOLED</li>
+            <li>Procesador: Snapdragon 6 Gen 1</li>
+            <li>RAM: 8 GB</li>
+            <li>Almacenamiento: 256 GB</li>
+            <li>Cámara trasera: 108 MP + 5 MP</li>
+            <li>Cámara frontal: 16 MP</li>
+            <li>Batería: 5300 mAh</li>
+            <li>Carga rápida: 35W</li>
+            <li>Sistema operativo: Android 14 (MagicOS)</li>
+          </ul>
+          <a href="detalle-honormagic.html"><img src="imagenes/HonorMagic.png" alt="HonorMagic"></a>
+          <h3>Honor Magic 7 Lite</h3>
+          <p class="precio">US$ 310.99</p>
+          <button class="btn-carrito" data-accion="agregar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2H3.3L5.1 11.5C5.2 12.1 5.7 12.6 6.4 12.6H13.5C14.1 12.6 14.7 12.2 14.8 11.6L15.8 5H4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="15.5" r="0.9" fill="white"/><circle cx="13" cy="15.5" r="0.9" fill="white"/></svg>
+            Añadir al carrito
+          </button>
+          <button class="btn-comparar" data-accion="comparar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7H19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7L2 13C2 14.6569 3.34315 16 5 16C6.65685 16 8 14.6569 8 13L5 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M19 7L16 13C16 14.6569 17.3431 16 19 16C20.6569 16 22 14.6569 22 13L19 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <span class="texto-btn-comparar">Comparar</span>
+          </button>
+        </div>
+
+         <div class="tarjeta" data-nombre="CHUWI CoreBook i3" data-precio="249.99" data-categoria="computadora" data-imagen="imagenes/Chuwi.png">
+          <ul class="specs-producto" hidden>
+            <li>Tipo: Laptop</li>
+            <li>Pantalla: 14.1" Full HD IPS</li>
+            <li>Procesador: Intel Core i3-1215U</li>
+            <li>RAM: 8 GB</li>
+            <li>Almacenamiento: 256 GB SSD</li>
+            <li>Tarjeta gráfica: Intel UHD Graphics</li>
+            <li>Sistema operativo: Windows 11</li>
+          </ul>
+          <a href="detalle-chuwi.html"><img src="imagenes/Chuwi.png" alt="Chuwi"></a>
+          <h3>Chuwi CoreBook i3</h3>
+          <p class="precio">US$ 249.99</p>
+          <button class="btn-carrito" data-accion="agregar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2H3.3L5.1 11.5C5.2 12.1 5.7 12.6 6.4 12.6H13.5C14.1 12.6 14.7 12.2 14.8 11.6L15.8 5H4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="15.5" r="0.9" fill="white"/><circle cx="13" cy="15.5" r="0.9" fill="white"/></svg>
+            Añadir al carrito
+          </button>
+          <button class="btn-comparar" data-accion="comparar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7H19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7L2 13C2 14.6569 3.34315 16 5 16C6.65685 16 8 14.6569 8 13L5 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M19 7L16 13C16 14.6569 17.3431 16 19 16C20.6569 16 22 14.6569 22 13L19 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <span class="texto-btn-comparar">Comparar</span>
+          </button>
+        </div>
+
+         <div class="tarjeta" data-nombre="Play Station 4 Pro" data-precio="320" data-categoria="consola" data-imagen="imagenes/Ps4.png">
+          <ul class="specs-producto" hidden>
+            <li>Almacenamiento: 1 TB HDD</li>
+            <li>Resolución máxima: 4K (upscaling)</li>
+            <li>Procesador: AMD Jaguar 8 núcleos</li>
+            <li>Memoria RAM: 8 GB GDDR5</li>
+            <li>Lector de disco: Sí (Blu-ray)</li>
+            <li>Controles incluidos: 1 (DualShock 4)</li>
+          </ul>
+          <a href="detalle-ps4pro.html"><img src="imagenes/Ps4.png" alt="Play Station 4"></a>
+          <h3>Play Station 4<br>PRO</h3>
+          <p class="precio">US$ 320.00</p>
+          <button class="btn-carrito" data-accion="agregar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2H3.3L5.1 11.5C5.2 12.1 5.7 12.6 6.4 12.6H13.5C14.1 12.6 14.7 12.2 14.8 11.6L15.8 5H4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="15.5" r="0.9" fill="white"/><circle cx="13" cy="15.5" r="0.9" fill="white"/></svg>
+            Añadir al carrito
+          </button>
+          <button class="btn-comparar" data-accion="comparar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7H19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7L2 13C2 14.6569 3.34315 16 5 16C6.65685 16 8 14.6569 8 13L5 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M19 7L16 13C16 14.6569 17.3431 16 19 16C20.6569 16 22 14.6569 22 13L19 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <span class="texto-btn-comparar">Comparar</span>
+          </button>
+        </div>
+
+        <div class="tarjeta" data-nombre='Monitor Gaming LG"' data-precio="179.99" data-categoria="monitor" data-imagen="imagenes/MonitorLG.png">
+          <ul class="specs-producto" hidden>
+            <li>Tamaño: 24"</li>
+            <li>Resolución: 1920 x 1080 (FHD)</li>
+            <li>Tasa de refresco: 165 Hz</li>
+            <li>Tiempo de respuesta: 1 ms</li>
+            <li>Panel: IPS Plano</li>
+            <li>Conectividad: HDMI, DisplayPort</li>
+          </ul>
+          <a href="detalle-MonitorLG.html"><img src="imagenes/MonitorLG.png" alt="Monitor Gaming LG"></a>
+          <h3>Monitor Gaming LG<br> UltraGear 24"</h3>
+          <p class="precio">US$ 179.99</p>
+          <button class="btn-carrito" data-accion="agregar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2H3.3L5.1 11.5C5.2 12.1 5.7 12.6 6.4 12.6H13.5C14.1 12.6 14.7 12.2 14.8 11.6L15.8 5H4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="15.5" r="0.9" fill="white"/><circle cx="13" cy="15.5" r="0.9" fill="white"/></svg>
+            Añadir al carrito
+          </button>
+          <button class="btn-comparar" data-accion="comparar">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7H19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7L2 13C2 14.6569 3.34315 16 5 16C6.65685 16 8 14.6569 8 13L5 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M19 7L16 13C16 14.6569 17.3431 16 19 16C20.6569 16 22 14.6569 22 13L19 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <span class="texto-btn-comparar">Comparar</span>
+          </button>
+        </div>
+
+
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<div class="barra-comparar" id="barra-comparar">
+  <span id="barra-comparar-texto">0 productos seleccionados</span>
+  <div class="barra-comparar-botones">
+    <button id="barra-comparar-limpiar" class="btn-barra-secundario">Limpiar</button>
+    <a href="comparar.html" class="btn-barra-primario">Ver comparación</a>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script2.js"></script>
+<script src="comparador.js"></script>
+</body>
+</html>

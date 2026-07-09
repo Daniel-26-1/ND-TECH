@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login / Registro</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="contenedor" id="contenedor">
+
+  <!-- FORMULARIO DE REGISTRO -->
+  <div class="panel-formulario panel-registro">
+    <h1>Registrarse</h1>
+    <form id="form-registro" action="inicio.html" novalidate>
+      <div class="campo">
+        <input type="text" id="usuario-registro" placeholder="Usuario" required>
+        <span class="icono">&#128100;</span>
+        <span class="mensaje-error-campo" id="error-usuario-registro"></span>
+      </div>
+      <div class="campo">
+        <input type="email" id="correo-registro" placeholder="Correo Electronico" required>
+        <span class="icono">&#9993;</span>
+        <span class="mensaje-error-campo" id="error-correo"></span>
+      </div>
+      <div class="campo">
+        <input type="password" id="clave-registro" placeholder="Contraseña" required>
+        <span class="icono">&#128274;</span>
+        <span class="mensaje-error-campo" id="error-clave-registro"></span>
+      </div>
+      <button type="submit" class="btn-enviar">Registrarse</button>
+    </form>
+  </div>
+
+  <!-- FORMULARIO DE LOGIN -->
+  <div class="panel-formulario panel-login">
+    <h1>Iniciar Sesión</h1>
+    <form action="inicio.html">
+      <div class="campo">
+        <input type="text" placeholder="Usuario" required>
+        <span class="icono">&#128100;</span>
+      </div>
+      <div class="campo">
+        <input type="password" placeholder="Contraseña" required>
+        <span class="icono">&#128274;</span>
+      </div>
+      <a href="recuperar.html" class="olvide">Olvide mi contraseña?</a>
+      <button type="submit" class="btn-enviar">Iniciar Sesión</button>
+    </form>
+  </div>
+
+  <!-- PANELES DESLIZANTES (lado azul) -->
+  <div class="panel-deslizante">
+
+    <div class="panel-deslizante-izquierdo">
+      <h1>Bienvenido a ND TECH</h1>
+      <p>Ya tengo una cuenta</p>
+      <button type="button" class="btn-fantasma" id="btn-login">Iniciar sesión</button>
+    </div>
+
+    <div class="panel-deslizante-derecho">
+      <h1>Hola, Bienvenido</h1>
+      <p>Aun no tengo una cuenta</p>
+      <button type="button" class="btn-fantasma" id="btn-registro">Registrarse</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NDTECH - Comparador de productos</title>
+<link rel="stylesheet" href="css/style3.css">
+<link rel="stylesheet" href="css/comparador.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <aside class="sidebar">
+
+    <div class="logo">
+      <div class="logo-icono">
+        <img src="imagenes/logo.png" alt="Logo NDTECH">
+      </div>
+      <div class="logo-texto">
+        <h1>ND<span>TECH</span></h1>
+        <p>TECNOLOGÍA SIN LÍMITES</p>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <a href="inicio.html" class="menu-item">
+        <span class="menu-icono">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 11L12 4L21 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10V19C5 19.5523 5.44772 20 6 20H9V15C9 14.4477 9.44772 14 10 14H14C14.5523 14 15 14.4477 15 15V20H18C18.5523 20 19 19.5523 19 19V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        INICIO
+      </a>
+
+      <a href="inicio2.html" class="menu-item">
+        <span class="menu-icono">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/></svg>
+        </span>
+        VER PRODUCTOS
+      </a>
+
+      <a href="comparar.html" class="menu-item activo">
+        <span class="menu-icono">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7H19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 7L2 13C2 14.6569 3.34315 16 5 16C6.65685 16 8 14.6569 8 13L5 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M19 7L16 13C16 14.6569 17.3431 16 19 16C20.6569 16 22 14.6569 22 13L19 7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </span>
+        COMPARADOR
+      </a>
+
+
+      <a href="index.html" class="menu-item">
+        <span class="menu-icono">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17L21 12L16 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12H9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </span>
+        CERRAR SESIÓN
+      </a>
+    </nav>
+
+    <div class="promo">
+      <div class="promo-icono">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.59 13.41L11 3.83C10.63 3.46 10.13 3.25 9.6 3.25H4C3.44772 3.25 3 3.69772 3 4.25V9.85C3 10.38 3.21 10.88 3.58 11.25L13.16 20.83C13.94 21.61 15.2 21.61 15.98 20.83L20.59 16.22C21.37 15.44 21.37 14.19 20.59 13.41Z" stroke="#3aa0ff" stroke-width="1.6" fill="rgba(58,160,255,0.15)"/><circle cx="7.5" cy="7.5" r="1.25" fill="#3aa0ff"/></svg>
+      </div>
+      <h3>OFERTAS<br>EXCLUSIVAS</h3>
+      <p>Descuentos increíbles<br>todos los días</p>
+    </div>
+
+  </aside>
+
+  <main class="contenido">
+
+    <header class="topbar">
+      <button class="btn-menu" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6H21" stroke="white" stroke-width="1.8" stroke-linecap="round"/><path d="M3 12H21" stroke="white" stroke-width="1.8" stroke-linecap="round"/><path d="M3 18H21" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+
+      <div class="buscador">
+        <input type="text" id="input-buscar" placeholder="Buscar productos..." disabled>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7" stroke="#8a93ab" stroke-width="1.8"/><path d="M20 20L16.5 16.5" stroke="#8a93ab" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </div>
+
+      <p class="sin-resultados" id="sin-resultados" style="display:none"></p>
+
+     <div class="carrito-wrapper">
+        <button class="carrito" id="btn-carrito-icono">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 3H4.5L6.5 15.5C6.6 16.3 7.3 17 8.2 17H18C18.8 17 19.5 16.4 19.6 15.6L21 6H6" stroke="white" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="21" r="1.2" fill="white"/><circle cx="18" cy="21" r="1.2" fill="white"/></svg>
+          <span class="carrito-cantidad" id="carrito-cantidad">0</span>
+          <span class="carrito-texto">CARRITO</span>
+        </button>
+
+        <div class="carrito-panel" id="carrito-panel">
+          <h3>Tu carrito</h3>
+          <div class="carrito-lista" id="carrito-lista">
+            <p class="carrito-vacio" id="carrito-vacio">Tu carrito está vacío</p>
+          </div>
+          <div class="carrito-total">
+            <span>Total</span>
+            <span id="carrito-total-monto">US$ 0.00</span>
+          </div>
+          <a class="btn-pagar" id="btn-ir-pagar" href="pagar.html">Ir a pagar</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="comparador">
+
+      <div class="comparador-header">
+        <div>
+          <h2>COMPARADOR DE PRODUCTOS</h2>
+          <p>Selecciona hasta 4 productos para compararlos</p>
+        </div>
+        <button class="btn-limpiar-todo" id="btn-limpiar-todo">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 7H20M9 7V4.5C9 3.7 9.7 3 10.5 3H13.5C14.3 3 15 3.7 15 4.5V7M18 7L17.3 19.5C17.2 20.4 16.5 21 15.6 21H8.4C7.5 21 6.8 20.4 6.7 19.5L6 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Limpiar todo
+        </button>
+      </div>
+
+      <div class="comparador-vacio" id="comparador-vacio">
+        <p>Todavía no has agregado productos para comparar.<br>Ve al catálogo y usa el botón "Comparar" en las tarjetas de producto.</p>
+        <a href="inicio2.html">Ver productos</a>
+      </div>
+
+      <div class="slots-comparar" id="comparador-slots"></div>
+
+      <div class="tabla-comparar-wrapper" id="comparador-tabla-wrapper"></div>
+
+      <div class="acciones-comparador" id="acciones-comparador">
+        <button class="btn-compartir" id="btn-compartir-comparacion">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="5" r="2.6" stroke="currentColor" stroke-width="1.7"/><circle cx="6" cy="12" r="2.6" stroke="currentColor" stroke-width="1.7"/><circle cx="18" cy="19" r="2.6" stroke="currentColor" stroke-width="1.7"/><path d="M8.3 10.7L15.7 6.3M8.3 13.3L15.7 17.7" stroke="currentColor" stroke-width="1.7"/></svg>
+          Compartir comparación
+        </button>
+        <button class="btn-recomendacion" id="btn-recomendacion-inteligente">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L14 9L20 11L14 13L12 19L10 13L4 11L10 9L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          Ver recomendación inteligente
+        </button>
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script2.js"></script>
+<script src="comparador.js"></script>
+</body>
+</html>
