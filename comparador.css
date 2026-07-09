@@ -1,0 +1,454 @@
+.tarjeta a {
+  display: block;
+}
+
+.btn-comparar {
+  margin-top: 8px;
+  background: transparent;
+  color: #3aa0ff;
+  border: 1px solid #22306b;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.btn-comparar svg {
+  width: 15px;
+  height: 15px;
+}
+
+.btn-comparar:hover {
+  background: #121a30;
+  border-color: #3aa0ff;
+}
+
+.btn-comparar.activo {
+  background: linear-gradient(135deg, #2f6bff, #1c4fd6);
+  color: #fff;
+  border-color: transparent;
+}
+
+.tarjeta.en-comparacion {
+  border-color: #3aa0ff;
+}
+
+.barra-comparar {
+  position: fixed;
+  left: 50%;
+  bottom: 26px;
+  transform: translate(-50%, 120px);
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  background: #0d1326;
+  border: 1px solid #22306b;
+  border-radius: 14px;
+  padding: 14px 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+  z-index: 60;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.25s, opacity 0.25s, visibility 0.25s;
+}
+
+.barra-comparar.visible {
+  transform: translate(-50%, 0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.barra-comparar span {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #cdd4e6;
+  white-space: nowrap;
+}
+
+.barra-comparar-botones {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-barra-primario {
+  background: linear-gradient(135deg, #2f6bff, #1c4fd6);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-barra-secundario {
+  background: transparent;
+  color: #8a93ab;
+  border: 1px solid #22306b;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-barra-secundario:hover {
+  color: #fff;
+  border-color: #3aa0ff;
+}
+
+.toast {
+  position: fixed;
+  top: 26px;
+  left: 50%;
+  transform: translate(-50%, -30px);
+  background: #1a0f14;
+  border: 1px solid #ff5c5c;
+  color: #ffb3b3;
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-size: 13.5px;
+  font-weight: 600;
+  max-width: 480px;
+  text-align: center;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.25s, opacity 0.25s, visibility 0.25s;
+}
+
+.toast.visible {
+  transform: translate(-50%, 0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.toast.info {
+  background: #0d1a2f;
+  border-color: #3aa0ff;
+  color: #bcdcff;
+}
+
+.comparador-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.comparador-header h2 {
+  font-size: 26px;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.comparador-header p {
+  color: #8a93ab;
+  font-size: 14px;
+}
+
+.btn-limpiar-todo {
+  background: transparent;
+  border: 1px solid #22306b;
+  color: #cdd4e6;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.btn-limpiar-todo:hover {
+  border-color: #ff5c5c;
+  color: #ff8080;
+}
+
+.btn-limpiar-todo svg {
+  width: 16px;
+  height: 16px;
+}
+
+.slots-comparar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 34px;
+}
+
+.slot {
+  background: #0d1326;
+  border: 1px solid #1b2340;
+  border-radius: 14px;
+  padding: 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 260px;
+}
+
+.slot-vacio {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #6b7690;
+  gap: 10px;
+}
+
+.slot-vacio svg {
+  width: 34px;
+  height: 34px;
+  opacity: 0.6;
+}
+
+.slot-vacio p {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.slot-vacio a {
+  color: #3aa0ff;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.slot-quitar {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #131a30;
+  border: 1px solid #1b2340;
+  color: #8a93ab;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.slot-quitar:hover {
+  color: #ff5c5c;
+  border-color: #ff5c5c;
+}
+
+.slot img {
+  width: 100%;
+  aspect-ratio: 1 / 0.85;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+
+.slot h3 {
+  font-size: 14.5px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 4px;
+}
+
+.slot .slot-categoria {
+  font-size: 11.5px;
+  color: #6b7690;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.slot .slot-precio {
+  color: #2f8bff;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.slot .btn-ver-producto {
+  margin-top: auto;
+  background: linear-gradient(135deg, #2f6bff, #1c4fd6);
+  color: #fff;
+  border: none;
+  padding: 11px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.tabla-comparar-wrapper {
+  overflow-x: auto;
+  border: 1px solid #1b2340;
+  border-radius: 14px;
+  margin-bottom: 30px;
+}
+
+table.tabla-comparar {
+  width: 100%;
+  border-collapse: collapse;
+  background: #0d1326;
+  min-width: 640px;
+}
+
+.tabla-comparar th, .tabla-comparar td {
+  padding: 16px 18px;
+  text-align: left;
+  border-bottom: 1px solid #1b2340;
+  font-size: 13.5px;
+  white-space: nowrap;
+}
+
+.tabla-comparar thead th {
+  background: #0a0f1f;
+  font-size: 12.5px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #8a93ab;
+}
+
+.tabla-comparar thead th.col-producto {
+  color: #3aa0ff;
+  text-transform: none;
+  font-size: 14px;
+}
+
+.tabla-comparar tbody th {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #cdd4e6;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.tabla-comparar tbody th svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: #3aa0ff;
+}
+
+.tabla-comparar tbody tr:last-child td,
+.tabla-comparar tbody tr:last-child th {
+  border-bottom: none;
+}
+
+.tabla-comparar tr.fila-precio td {
+  color: #2f8bff;
+  font-weight: 700;
+  font-size: 14.5px;
+}
+
+.tabla-comparar td.sin-dato {
+  color: #4a5372;
+}
+
+.comparador-vacio {
+  text-align: center;
+  padding: 70px 20px;
+  color: #8a93ab;
+  border: 1px dashed #1b2340;
+  border-radius: 14px;
+  margin-bottom: 30px;
+}
+
+.comparador-vacio p {
+  margin-bottom: 18px;
+  font-size: 14.5px;
+}
+
+.comparador-vacio a {
+  display: inline-block;
+  background: linear-gradient(135deg, #2f6bff, #1c4fd6);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13.5px;
+}
+
+.acciones-comparador {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-compartir {
+  background: transparent;
+  border: 1px solid #22306b;
+  color: #cdd4e6;
+  padding: 13px 20px;
+  border-radius: 10px;
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-compartir:hover {
+  border-color: #3aa0ff;
+  color: #fff;
+}
+
+.btn-compartir svg {
+  width: 16px;
+  height: 16px;
+}
+
+.btn-recomendacion {
+  background: linear-gradient(135deg, #2f6bff, #1c4fd6);
+  border: none;
+  color: #fff;
+  padding: 13px 22px;
+  border-radius: 10px;
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-recomendacion svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 1200px) {
+  .slots-comparar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .slots-comparar {
+    grid-template-columns: 1fr;
+  }
+  .barra-comparar {
+    flex-direction: column;
+    gap: 10px;
+    width: calc(100% - 40px);
+  }
+}
